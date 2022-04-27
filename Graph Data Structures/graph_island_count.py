@@ -22,8 +22,8 @@ def island_count(graph):
     visited = set()
     count = 0
 
-    for r in range(len(graph)):
-        for c in range(len(graph[0])):
+    for r in range(len(graph)):  # rows
+        for c in range(len(graph[0])):  # columns
             if explore_island(graph, r, c, visited) is True:
                 count += 1
     return count
