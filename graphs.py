@@ -230,7 +230,7 @@ edges1 = [
 
 def shortest_path (edges, nodeA, nodeB):
 	graph = build_graph1(edges)
-	visited = set([nodeA])
+	visited = ([nodeA])
 	queue = [[nodeA, 0]]
 
 	while len(queue) > 0:
