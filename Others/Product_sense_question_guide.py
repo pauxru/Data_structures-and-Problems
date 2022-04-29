@@ -1,10 +1,11 @@
+"""
 Describe a product:
 eg: Describe the health of uber.
 Metrics: Use statistical functions like sum, avg, count etc
 use Actions
 use unit of Analysis e.g. per day, per year etc
 
-Use a framework that would fit the product. 
+Use a framework that would fit the product.
 
 to measure health The HEART:
 H = Happiness (reviews and surveys)
@@ -19,3 +20,4 @@ A = Activation
 R = Retention
 R = Referral
 R = Revenue
+"""
