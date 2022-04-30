@@ -110,14 +110,26 @@ class LinkedList:
                 break
             itr = itr.next
 
+    def reverse_linked_list(self):
+        prev, curr = None, self.head
+
+        while curr.next:
+            nxt = curr.next
+            curr.next = prev
+            prev = curr
+            curr = nxt
+        return prev
+
 
 ll = LinkedList()
 ll.insert_at_beginning(88)
 ll.insert_at_beginning(75)
 ll.insert_at_end(32)
 ll.insert_values([63, 345, 74, 2, 12, 6, 'paul'])
-ll.remove_at(2)
-ll.insert_at(3, 'jj')
-ll.insert_after_value(2,"apple")
+# ll.remove_at(2)
+# ll.insert_at(3, 'jj')
+# ll.insert_after_value(2,"apple")
+ll.print()
+ll.reverse_linked_list()
 ll.print()
 
