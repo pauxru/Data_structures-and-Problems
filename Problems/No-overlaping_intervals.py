@@ -8,6 +8,7 @@ of the intervals non-overlapping.
 """
 
 intervals1 = [[1, 2], [2, 3], [3, 4], [1, 3]]  # Output: 1
+intervals2 = [[1, 2], [1, 2], [1, 2]]  # Output: 2
 
 
 def no_overlapping_intervals(intervals):
